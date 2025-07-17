@@ -178,7 +178,7 @@ Limitations:
 * Needs attention to hold times, setup times, and clock stretching.
 [**<**](#understanding-i2c-in-esp-idf)
 
---
+---
 
 ## Old Model v4.x or below
 
@@ -215,7 +215,7 @@ Characteristics:
 * Less modular, harder-to-maintain code.
 [**<**](#understanding-i2c-in-esp-idf)
 
---
+---
 
 ## New Model v5.x or above
 
@@ -302,8 +302,7 @@ i2c_master_bus_add_device(bus_handle, &device_config, &device_handle)
 | Code structure         | Coupled, error-prone                    | Clean, modular, scalable                      |
 [**<**](#understanding-i2c-in-esp-idf)
 
---
-
+---
 ## Practical advantages of the new model
 
 * Safely control multiple sensors on the same bus.
@@ -312,9 +311,9 @@ i2c_master_bus_add_device(bus_handle, &device_config, &device_handle)
 * Prepares applications for asynchronous operations and future extensions.
 [**<**](#understanding-i2c-in-esp-idf)
 
---
+---
 
 [***^***](#summary)
 
---
---
+---
+---
