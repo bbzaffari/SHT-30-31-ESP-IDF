@@ -179,6 +179,7 @@ Limitations:
 [**<**](#understanding-i2c-in-esp-idf)
 
 --
+
 ## Old Model v4.x or below
 
 In the old model, the I2C driver was based on:
@@ -302,6 +303,7 @@ i2c_master_bus_add_device(bus_handle, &device_config, &device_handle)
 [**<**](#understanding-i2c-in-esp-idf)
 
 --
+
 ## Practical advantages of the new model
 
 * Safely control multiple sensors on the same bus.
@@ -309,7 +311,9 @@ i2c_master_bus_add_device(bus_handle, &device_config, &device_handle)
 * Cleaner, easier-to-maintain code.
 * Prepares applications for asynchronous operations and future extensions.
 [**<**](#understanding-i2c-in-esp-idf)
+
 --
+
 [***^***](#summary)
 
 --
