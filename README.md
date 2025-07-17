@@ -289,7 +289,9 @@ i2c_master_bus_add_device(bus_handle, &device_config, &device_handle)
 * Bus selection.
 * Concurrency control.
 * Timing management.
+[**<**](#understanding-i2c-in-esp-idf)
 
+---
 ## Side-by-side comparison
 
 | Aspect                 | Old Model (≤ v4.x)                      | New Model (≥ v5.x)                            |
