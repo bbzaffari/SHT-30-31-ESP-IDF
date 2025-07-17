@@ -300,6 +300,7 @@ i2c_master_bus_add_device(bus_handle, &device_config, &device_handle)
 | Multitasking safety    | Not guaranteed                          | Guaranteed by the driver                      |
 | Code structure         | Coupled, error-prone                    | Clean, modular, scalable                      |
 [**<**](#understanding-i2c-in-esp-idf)
+
 --
 ## Practical advantages of the new model
 
