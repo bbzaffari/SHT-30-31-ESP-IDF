@@ -105,6 +105,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 - `0x30A2` → soft reset
 
 [***^***](#summary)
+
 ---
 ---
 ---
@@ -128,6 +129,7 @@ In your driver (`0x2400` command), you are using:
 > **High repeatability, no clock stretching**,  
 so the ESP32 needs to wait the full conversion time (`vTaskDelay()`) before attempting to read.
 
+
 ---
 
 ### When to care about clock stretching?
@@ -140,7 +142,10 @@ When dealing with multitasking systems where wasting CPU cycles on waiting is in
 
 In summary, clock stretching is an elegant I2C feature that lets slow devices control the pacing — but if unused, the master must handle timing carefully.
 
+
 ---
+[***^***](#summary)
+
 ---
 ---
 
@@ -293,3 +298,5 @@ i2c_master_bus_add_device(bus_handle, &device_config, &device_handle)
 * Reduce bugs related to global state.
 * Cleaner, easier-to-maintain code.
 * Prepares applications for asynchronous operations and future extensions.
+
+[***^***](#summary)
