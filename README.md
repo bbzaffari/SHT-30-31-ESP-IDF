@@ -103,10 +103,10 @@ For detailed electrical characteristics, communication protocols, and performanc
 
 **To reset sensor:**
 - `0x30A2` → soft reset
-
+---
 [***^***](#summary)
 
----
+
 ---
 ---
 ### What is Clock Stretching?
