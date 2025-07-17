@@ -3,15 +3,16 @@
 
 This driver was developed by me, Bruno Bavaresco Zaffari, as part of my undergraduate final thesis project in Computer Engineering. It is one of the modules included in the TCC directory of the main repository, serving as a key component for managing low-level hardware communication in the final system. Everyone is free to use, modify, and adapt this code as they wish, with no need for copyrights.
 
-# Summary
+# Summary [***^***](#summary)
 
-- [1 Introduction: What is the SHT30?](#introduction-what-is-the-sht30)
-- [2 Key Features](#key-features)
-- [3 SHT30 I2C Commands (16 bit hex)](#sht30-i2c-commands-16-bit-hex)
-- [4 Quick Guide: When to Use](#quick-guide-when-to-use)
-- [5 Understanding I2C Basics](#quick-review-what-is-i2c)
-- [6 What is Clock Stretching?](#what-is-clock-stretching)
-- [7 Understanding I2C in ESP-IDF](#understanding-i2c-in-esp-idf)
+1. - [Introduction: What is the SHT30?](#introduction-what-is-the-sht30)
+2. - [Introduction: What is the SHT30?](#introduction-what-is-the-sht30)
+3. - [Key Features](#key-features)
+4. - [SHT30 I2C Commands (16 bit hex)](#sht30-i2c-commands-16-bit-hex)
+5. - [Quick Guide: When to Use](#quick-guide-when-to-use)
+6. - [Understanding I2C Basics](#quick-review-what-is-i2c)
+7. - [What is Clock Stretching?](#what-is-clock-stretching)
+8. - [Understanding I2C in ESP-IDF](#understanding-i2c-in-esp-idf)
     - [7.1 Old Model v4.x or below](#old-model-v4x-or-below)
     - [7.2 New Model v5.x or above](#new-model-v5x-or-above)
     - [7.3 Side-by-Side Comparison](#side-by-side-comparison)
@@ -19,7 +20,15 @@ This driver was developed by me, Bruno Bavaresco Zaffari, as part of my undergra
 
 # Introduction: What is the SHT30?
 
-The **SHT30** is a high-precision digital sensor manufactured by Sensirion, designed to measure **relative humidity (RH)** and **temperature** in various environments. It integrates the sensing elements and signal processing into a compact package, making it ideal for embedded systems.
+The **SHT30** is a high-precision digital sensor manufactured by Sensirion, designed to measure **relative humidity (RH)** and **temperature** in various environments. It integrates the sensing elements and signal processing into a compact package, making it ideal for embedded systems. \
+[***^***](#summary)
+
+---
+# Documentation
+
+For detailed electrical characteristics, communication protocols, and performance specifications, refer to the official  
+[SHT3x Datasheet](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf).\
+[***^***](#summary)
 
 ---
 
@@ -50,8 +59,9 @@ The **SHT30** is a high-precision digital sensor manufactured by Sensirion, desi
 * **Factory-calibrated:**
 
   * Provides ready-to-use digital readings without user calibration
+    
+[***^***](#summary)
 
-  
 ---
 
 
@@ -71,6 +81,8 @@ The **SHT30** is a high-precision digital sensor manufactured by Sensirion, desi
 
 - `0x3066` → Heater OFF.  
   → Deactivates internal heater.
+  
+[***^***](#summary)
 
 ---
 
@@ -91,6 +103,7 @@ The **SHT30** is a high-precision digital sensor manufactured by Sensirion, desi
 **To reset sensor:**
 - `0x30A2` → soft reset
 
+[***^***](#summary)
 ---
 ---
 ---
