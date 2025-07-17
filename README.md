@@ -14,10 +14,10 @@ This driver was developed by me, Bruno Bavaresco Zaffari, as part of my undergra
 6. - [Understanding I2C Basics](#quick-review-what-is-i2c)
 7. - [What is Clock Stretching?](#what-is-clock-stretching)
 8. - [Understanding I2C in ESP-IDF](#understanding-i2c-in-esp-idf)
-    - [7.1 Old Model v4.x or below](#old-model-v4x-or-below)
-    - [7.2 New Model v5.x or above](#new-model-v5x-or-above)
-    - [7.3 Side-by-Side Comparison](#side-by-side-comparison)
-    - [7.4 Practical Advantages](#practical-advantages-of-the-new-model)
+    - [8.1 Old Model v4.x or below](#old-model-v4x-or-below)
+    - [8.2 New Model v5.x or above](#new-model-v5x-or-above)
+    - [8.3 Side-by-Side Comparison](#side-by-side-comparison)
+    - [8.4 Practical Advantages](#practical-advantages-of-the-new-model)
 
 # Introduction: What is the SHT30?
 
@@ -150,10 +150,10 @@ In summary, clock stretching is an elegant I2C feature that lets slow devices co
 
 # Understanding I2C in ESP-IDF
 [**<**](#understanding-i2c-in-esp-idf)
-- [7.1 Old Model v4.x or below](#old-model-v4x-or-below)
-- [7.2 New Model v5.x or above](#new-model-v5x-or-above)
-- [7.3 Side-by-Side Comparison](#side-by-side-comparison)
-- [7.4 Practical Advantages](#practical-advantages-of-the-new-model)
+- [8.1 Old Model v4.x or below](#old-model-v4x-or-below)
+- [8.2 New Model v5.x or above](#new-model-v5x-or-above)
+- [8.3 Side-by-Side Comparison](#side-by-side-comparison)
+- [8.4 Practical Advantages](#practical-advantages-of-the-new-model)
 
 ## Introduction to I2C
 
@@ -215,6 +215,7 @@ Characteristics:
 [**<**](#understanding-i2c-in-esp-idf)
 
 --
+
 ## New Model v5.x or above
 
 With the reimplementation, the I2C driver introduced two fundamental concepts:
