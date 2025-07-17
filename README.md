@@ -5,7 +5,6 @@ This driver was developed by me, Bruno Bavaresco Zaffari, as part of my undergra
 
 # Summary 
 
-[***^***](#summary)
 
 1. - [Introduction: What is the SHT30?](#introduction-what-is-the-sht30)
 2. - [Introduction: What is the SHT30?](#introduction-what-is-the-sht30)
@@ -150,7 +149,7 @@ In summary, clock stretching is an elegant I2C feature that lets slow devices co
 ---
 
 # Understanding I2C in ESP-IDF
-[**>**](#understanding-i2c-in-esp-idf)
+[**<**](#understanding-i2c-in-esp-idf)
 - [7.1 Old Model v4.x or below](#old-model-v4x-or-below)
 - [7.2 New Model v5.x or above](#new-model-v5x-or-above)
 - [7.3 Side-by-Side Comparison](#side-by-side-comparison)
@@ -177,7 +176,7 @@ Limitations:
 * Sensitive to electrical noise.
 * Requires careful timing and concurrency management.
 * Needs attention to hold times, setup times, and clock stretching.
-[**>**](#understanding-i2c-in-esp-idf)
+[**<**](#understanding-i2c-in-esp-idf)
 
 --
 ## Old Model v4.x or below
@@ -213,7 +212,7 @@ Characteristics:
 * Difficult to scale to larger projects.
 * High risk of bugs, race conditions, and deadlocks.
 * Less modular, harder-to-maintain code.
-[**>**](#understanding-i2c-in-esp-idf)
+[**<**](#understanding-i2c-in-esp-idf)
 
 --
 ## New Model v5.x or above
@@ -299,7 +298,7 @@ i2c_master_bus_add_device(bus_handle, &device_config, &device_handle)
 | Modularity             | Low                                     | High, context-oriented                        |
 | Multitasking safety    | Not guaranteed                          | Guaranteed by the driver                      |
 | Code structure         | Coupled, error-prone                    | Clean, modular, scalable                      |
-[**>**](#understanding-i2c-in-esp-idf)
+[**<**](#understanding-i2c-in-esp-idf)
 --
 ## Practical advantages of the new model
 
@@ -307,7 +306,7 @@ i2c_master_bus_add_device(bus_handle, &device_config, &device_handle)
 * Reduce bugs related to global state.
 * Cleaner, easier-to-maintain code.
 * Prepares applications for asynchronous operations and future extensions.
-[**>**](#understanding-i2c-in-esp-idf)
+[**<**](#understanding-i2c-in-esp-idf)
 --
 [***^***](#summary)
 
