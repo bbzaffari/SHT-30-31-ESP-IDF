@@ -150,6 +150,11 @@ In summary, clock stretching is an elegant I2C feature that lets slow devices co
 ---
 
 # Understanding I2C in ESP-IDF
+[**>**](#understanding-i2c-in-esp-idf)
+- [7.1 Old Model v4.x or below](#old-model-v4x-or-below)
+- [7.2 New Model v5.x or above](#new-model-v5x-or-above)
+- [7.3 Side-by-Side Comparison](#side-by-side-comparison)
+- [7.4 Practical Advantages](#practical-advantages-of-the-new-model)
 
 ## Introduction to I2C
 
@@ -172,7 +177,9 @@ Limitations:
 * Sensitive to electrical noise.
 * Requires careful timing and concurrency management.
 * Needs attention to hold times, setup times, and clock stretching.
+[**>**](#understanding-i2c-in-esp-idf)
 
+--
 ## Old Model v4.x or below
 
 In the old model, the I2C driver was based on:
@@ -191,7 +198,6 @@ In the old model, the I2C driver was based on:
   i2c_master_read()
   i2c_master_write_read_device()
   ```
-
 Characteristics:
 
 * All code shared the same bus context.
@@ -207,7 +213,9 @@ Characteristics:
 * Difficult to scale to larger projects.
 * High risk of bugs, race conditions, and deadlocks.
 * Less modular, harder-to-maintain code.
+[**>**](#understanding-i2c-in-esp-idf)
 
+--
 ## New Model v5.x or above
 
 With the reimplementation, the I2C driver introduced two fundamental concepts:
@@ -227,7 +235,9 @@ It is created with:
 ```c
 i2c_new_master_bus(&config)
 ```
+[**>**](#understanding-i2c-in-esp-idf)
 
+--
 **Responsibilities:**
 
 * Manage the hardware.
@@ -291,12 +301,17 @@ i2c_master_bus_add_device(bus_handle, &device_config, &device_handle)
 | Modularity             | Low                                     | High, context-oriented                        |
 | Multitasking safety    | Not guaranteed                          | Guaranteed by the driver                      |
 | Code structure         | Coupled, error-prone                    | Clean, modular, scalable                      |
-
+[**>**](#understanding-i2c-in-esp-idf)
+--
 ## Practical advantages of the new model
 
 * Safely control multiple sensors on the same bus.
 * Reduce bugs related to global state.
 * Cleaner, easier-to-maintain code.
 * Prepares applications for asynchronous operations and future extensions.
-
+[**>**](#understanding-i2c-in-esp-idf)
+--
 [***^***](#summary)
+
+--
+--
