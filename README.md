@@ -134,9 +134,9 @@ so the ESP32 needs to wait the full conversion time (`vTaskDelay()`) before atte
 
 ### When to care about clock stretching?
 
-When using sensors or devices that perform slow internal operations.  
+*When using sensors or devices that perform slow internal operations.  
 When you want to avoid fixed delays and prefer real-time readiness signals.  
-When dealing with multitasking systems where wasting CPU cycles on waiting is inefficient.
+*When dealing with multitasking systems where wasting CPU cycles on waiting is inefficient.
 
 ---
 
