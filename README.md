@@ -235,9 +235,7 @@ It is created with:
 ```c
 i2c_new_master_bus(&config)
 ```
-[**>**](#understanding-i2c-in-esp-idf)
 
---
 **Responsibilities:**
 
 * Manage the hardware.
