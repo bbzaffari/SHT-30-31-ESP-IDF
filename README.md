@@ -6,14 +6,14 @@ This driver was developed by me, Bruno Bavaresco Zaffari, as part of my undergra
 # Summary 
 
 
-1. - [Introduction: What is the SHT30?](#introduction-what-is-the-sht30)
-2. - [Introduction: What is the SHT30?](#introduction-what-is-the-sht30)
-3. - [Key Features](#key-features)
-4. - [SHT30 I2C Commands (16 bit hex)](#sht30-i2c-commands-16-bit-hex)
-5. - [Quick Guide: When to Use](#quick-guide-when-to-use)
-6. - [Understanding I2C Basics](#quick-review-what-is-i2c)
-7. - [What is Clock Stretching?](#what-is-clock-stretching)
-8. - [Understanding I2C in ESP-IDF](#understanding-i2c-in-esp-idf)
+1. [Introduction: What is the SHT30?](#introduction-what-is-the-sht30)
+2. [Introduction: What is the SHT30?](#introduction-what-is-the-sht30)
+3. [Key Features](#key-features)
+4. [SHT30 I2C Commands (16 bit hex)](#sht30-i2c-commands-16-bit-hex)
+5. [Quick Guide: When to Use](#quick-guide-when-to-use)
+6. [Understanding I2C Basics](#quick-review-what-is-i2c)
+7. [What is Clock Stretching?](#what-is-clock-stretching)
+8. [Understanding I2C in ESP-IDF](#understanding-i2c-in-esp-idf)
     - [8.1 Old Model v4.x or below](#old-model-v4x-or-below)
     - [8.2 New Model v5.x or above](#new-model-v5x-or-above)
     - [8.3 Side-by-Side Comparison](#side-by-side-comparison)
