@@ -151,12 +151,12 @@ In I2C, clock stretching is an elegant I2C feature that lets slow devices contro
 ---
 
 # Understanding I2C in ESP-IDF
-[<<_](#what-is-clock-stretching)        [***^***](#toc)             [_>>](#toc)
-[7.1 Understanding I2C Basics](#quick-review-what-is-i2c)
-[7.2 Old Model v4.x or below](#old-model-v4x-or-below)
-[7.3 New Model v5.x or above](#new-model-v5x-or-above)
-[7.4 Side-by-Side Comparison](#side-by-side-comparison)
-[7.5 Practical Advantages](#practical-advantages-of-the-new-model)
+[<<_](#what-is-clock-stretching)        [***^***](#toc)             [_>>](#toc) \
+- [7.1 Understanding I2C Basics](#quick-review-what-is-i2c)
+- [7.2 Old Model v4.x or below](#old-model-v4x-or-below)
+- [7.3 New Model v5.x or above](#new-model-v5x-or-above)
+- [7.4 Side-by-Side Comparison](#side-by-side-comparison)
+- [7.5 Practical Advantages](#practical-advantages-of-the-new-model)
 
 ## Introduction to I2C
 
@@ -178,7 +178,7 @@ Limitations:
 
 * Sensitive to electrical noise.
 * Requires careful timing and concurrency management.
-* Needs attention to hold times, setup times, and clock stretching.
+* Needs attention to hold times, setup times, and clock stretching.\
 [**.**](#understanding-i2c-in-esp-idf)
 
 ---
