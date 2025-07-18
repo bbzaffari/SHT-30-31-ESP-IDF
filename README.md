@@ -10,7 +10,7 @@ This driver was developed by me, Bruno Bavaresco Zaffari, as part of my undergra
 2. [Documentation](#documentation)
 3. [Key Features](#key-features)
 4. [SHT30 I2C Commands (16 bit hex)](#sht30-i2c-commands-16-bit-hex)
-5. [Quick Guide: When to Use](#quick-guide-when-to-use)
+5. [Quick Guide: When to Use](#quick-guide-when-to-use-which-command)
 6. [What is Clock Stretching?](#what-is-clock-stretching)
 7. [Understanding I2C in ESP-IDF](#understanding-i2c-in-esp-idf)
     - [7.1 Understanding I2C Basics](#quick-review-what-is-i2c)
@@ -66,7 +66,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 
 
 ##  SHT30 I2C Commands (16-bit hex)
-[<<_](#key-features)   [**^**](#toc)               [_>>](#quick-guide-when-to-use)
+[<<_](#key-features)   [**^**](#toc)               [_>>](#quick-guide-when-to-use-which-command)
 - `0x2400` → Starts measurement (high repeatability, no clock stretching).  
   → Use when you want precise temperature and humidity readings.
 
