@@ -20,21 +20,21 @@ This driver was developed by me, Bruno Bavaresco Zaffari, as part of my undergra
     - [7.5 Practical Advantages](#practical-advantages-of-the-new-model)
 
 # Introduction: What is the SHT30?
-[<<_](#toc)         [**_>>**](#documentation) 
+[<<_](#toc)         [_>>](#documentation) 
 The **SHT30** is a high-precision digital sensor manufactured by Sensirion, designed to measure **relative humidity (RH)** and **temperature** in various environments. It integrates the sensing elements and signal processing into a compact package, making it ideal for embedded systems. 
 [***^***](#toc)
 
 ---
 # Documentation 
-[**<**](#introduction-what-is-the-sht30)   
-[**>**](#key-features) \
+[<<_](#introduction-what-is-the-sht30)   
+[_>>](#key-features) \
 For detailed electrical characteristics, communication protocols, and performance specifications, refer to the official [SHT3x Datasheet](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf).\
 [***^***](#toc)        
 
 ---
 
 # Key Features
-[**<**](#documentation)        [***^***](#toc)             [**>**](#sht30-i2c-commands-16-bit-hex)
+[<<_](#documentation)        [***^***](#toc)             [_>>](#sht30-i2c-commands-16-bit-hex)
 * **Measurement ranges:**
 
   * Humidity: 0–100% RH
@@ -67,7 +67,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 
 
 ###  SHT30 I2C Commands (16-bit hex)
-[**<**](#key-features)   [***^***](#toc)               [**>**](#quick-guide-when-to-use)
+[<<_](#key-features)   [***^***](#toc)               [_>>](#quick-guide-when-to-use)
 - `0x2400` → Starts measurement (high repeatability, no clock stretching).  
   → Use when you want precise temperature and humidity readings.
 
@@ -89,7 +89,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 
 
 ### Quick Guide: When to Use Which Command
-[**<**](#sht30-i2c-commands-16-bit-hex)                       [**>**](#what-is-clock-stretching)
+[<<_](#sht30-i2c-commands-16-bit-hex)                       [_>>](#what-is-clock-stretching)
                    
 **To read data:**
 - `0x2400` → start measurement  
@@ -111,7 +111,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 ---
 ---
 ### What is Clock Stretching?
- [<      ](#sht30-i2c-commands-16-bit-hex) [***^***](#toc) [      >](#understanding-i2c-in-esp-idf)
+ [<<_](#sht30-i2c-commands-16-bit-hex) [***^***](#toc) [_>>](#understanding-i2c-in-esp-idf)
                       
 Clock stretching is a mechanism in I2C where the **slave device temporarily holds the SCL line low** to pause communication. This tells the master:
 > “Wait, I need more time to process before you continue.”
@@ -152,7 +152,7 @@ In I2C, clock stretching is an elegant I2C feature that lets slow devices contro
 ---
 
 # Understanding I2C in ESP-IDF
-[**<**](#what-is-clock-stretching)        [***^***](#toc)             [**>**](#toc)
+[<<_](#what-is-clock-stretching)        [***^***](#toc)             [_>>](#toc)
 [7.1 Understanding I2C Basics](#quick-review-what-is-i2c)
 [7.2 Old Model v4.x or below](#old-model-v4x-or-below)
 [7.3 New Model v5.x or above](#new-model-v5x-or-above)
