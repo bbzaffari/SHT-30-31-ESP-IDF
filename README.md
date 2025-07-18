@@ -20,13 +20,13 @@ This driver was developed by me, Bruno Bavaresco Zaffari, as part of my undergra
     - [7.5 Practical Advantages](#practical-advantages-of-the-new-model)
 
 # Introduction: What is the SHT30?
-[**<**](#toc)           [***^***](#toc)          [**>**](#documentation)
-The **SHT30** is a high-precision digital sensor manufactured by Sensirion, designed to measure **relative humidity (RH)** and **temperature** in various environments. It integrates the sensing elements and signal processing into a compact package, making it ideal for embedded systems. \
+[**< **](#toc)           [***^***](#toc)          [**>**](#documentation) \
+The **SHT30** is a high-precision digital sensor manufactured by Sensirion, designed to measure **relative humidity (RH)** and **temperature** in various environments. It integrates the sensing elements and signal processing into a compact package, making it ideal for embedded systems. 
 
 
 ---
 # Documentation
-[**<**](#introduction-what-is-the-sht30)     [***^***](#toc)         [**>**](#key-features)
+[**<**](#introduction-what-is-the-sht30)     [***^***](#toc)         [**>**](#key-features) 
 For detailed electrical characteristics, communication protocols, and performance specifications, refer to the official [SHT3x Datasheet](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf).\
 
 
@@ -141,7 +141,7 @@ When you want to avoid fixed delays and prefer real-time readiness signals.
 
 ---
 
-In toc, clock stretching is an elegant I2C feature that lets slow devices control the pacing — but if unused, the master must handle timing carefully.
+In I2C, clock stretching is an elegant I2C feature that lets slow devices control the pacing — but if unused, the master must handle timing carefully.
 
 
 ---
