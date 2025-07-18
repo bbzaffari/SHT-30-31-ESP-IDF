@@ -29,7 +29,7 @@ The **SHT30** is a high-precision digital sensor manufactured by Sensirion, desi
 
 ---
 ## Documentation 
-[<<_](#introduction-what-is-the-sht30) |   [_>>](#key-features)
+|[<<_](#introduction-what-is-the-sht30) |   [_>>](#key-features)|
 |-------------|-------------------------|\
 For detailed electrical characteristics, communication protocols, and performance specifications, refer to the official [SHT3x Datasheet](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf).\
 [***^***](#toc)        
