@@ -11,29 +11,29 @@ This driver was developed by me, Bruno Bavaresco Zaffari, as part of my undergra
 3. [Key Features](#key-features)
 4. [SHT30 I2C Commands (16 bit hex)](#sht30-i2c-commands-16-bit-hex)
 5. [Quick Guide: When to Use](#quick-guide-when-to-use)
-6. [Understanding I2C Basics](#quick-review-what-is-i2c)
-7. [What is Clock Stretching?](#what-is-clock-stretching)
-8. [Understanding I2C in ESP-IDF](#understanding-i2c-in-esp-idf)
-    - [8.1 Old Model v4.x or below](#old-model-v4x-or-below)
-    - [8.2 New Model v5.x or above](#new-model-v5x-or-above)
-    - [8.3 Side-by-Side Comparison](#side-by-side-comparison)
-    - [8.4 Practical Advantages](#practical-advantages-of-the-new-model)
+6. [What is Clock Stretching?](#what-is-clock-stretching)
+7. [Understanding I2C in ESP-IDF](#understanding-i2c-in-esp-idf)
+    - [7.1 Understanding I2C Basics](#quick-review-what-is-i2c)
+    - [7.2 Old Model v4.x or below](#old-model-v4x-or-below)
+    - [7.3 New Model v5.x or above](#new-model-v5x-or-above)
+    - [7.4 Side-by-Side Comparison](#side-by-side-comparison)
+    - [7.5 Practical Advantages](#practical-advantages-of-the-new-model)
 
 # Introduction: What is the SHT30?
-[**<**](#toc)                     [**>**](#documentation)
+[**<**](#toc)           [***^***](#toc)          [**>**](#documentation)
 The **SHT30** is a high-precision digital sensor manufactured by Sensirion, designed to measure **relative humidity (RH)** and **temperature** in various environments. It integrates the sensing elements and signal processing into a compact package, making it ideal for embedded systems. \
-[***^***](#toc)
+
 
 ---
 # Documentation
-[**<**](#introduction-what-is-the-sht30)                     [**>**](#key-features)
+[**<**](#introduction-what-is-the-sht30)     [***^***](#toc)         [**>**](#key-features)
 For detailed electrical characteristics, communication protocols, and performance specifications, refer to the official [SHT3x Datasheet](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf).\
-[***^***](#toc)
+
 
 ---
 
 # Key Features
-[**<**](#documentation)                     [**>**](#sht30-i2c-commands-16-bit-hex)
+[**<**](#documentation)        [***^***](#toc)             [**>**](#sht30-i2c-commands-16-bit-hex)
 * **Measurement ranges:**
 
   * Humidity: 0–100% RH
@@ -66,7 +66,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 
 
 ###  SHT30 I2C Commands (16-bit hex)
-[**<**](#sht30-i2c-commands-16-bit-hex)                     [**>**](#quick-guide-when-to-use)
+[**<**](#key-features)   [***^***](#toc)               [**>**](#quick-guide-when-to-use)
 - `0x2400` → Starts measurement (high repeatability, no clock stretching).  
   → Use when you want precise temperature and humidity readings.
 
@@ -88,7 +88,8 @@ For detailed electrical characteristics, communication protocols, and performanc
 
 
 ### Quick Guide: When to Use Which Command
-[**<**](#key-features)                     [**>**](#quick-review-what-is-i2c)
+                     [**>**](#what-is-clock-stretching)
+                     [**<**](#sht30-i2c-commands-16-bit-hex)   
 **To read data:**
 - `0x2400` → start measurement  
 - then read the 6-byte result (via I2C read)
@@ -109,7 +110,8 @@ For detailed electrical characteristics, communication protocols, and performanc
 ---
 ---
 ### What is Clock Stretching?
-
+ [**< **](#sht30-i2c-commands-16-bit-hex) [***^***](#toc) [** >**](#understanding-i2c-in-esp-idf)
+                      
 Clock stretching is a mechanism in I2C where the **slave device temporarily holds the SCL line low** to pause communication. This tells the master:
 > “Wait, I need more time to process before you continue.”
 
@@ -149,11 +151,12 @@ In toc, clock stretching is an elegant I2C feature that lets slow devices contro
 ---
 
 # Understanding I2C in ESP-IDF
-[**<**](#understanding-i2c-in-esp-idf)                     [**>**](#understanding-i2c-in-esp-idf)
-- [8.1 Old Model v4.x or below](#old-model-v4x-or-below)
-- [8.2 New Model v5.x or above](#new-model-v5x-or-above)
-- [8.3 Side-by-Side Comparison](#side-by-side-comparison)
-- [8.4 Practical Advantages](#practical-advantages-of-the-new-model)
+[**<**](#what-is-clock-stretching)        [***^***](#toc)             [**>**](#toc)
+[7.1 Understanding I2C Basics](#quick-review-what-is-i2c)
+[7.2 Old Model v4.x or below](#old-model-v4x-or-below)
+[7.3 New Model v5.x or above](#new-model-v5x-or-above)
+[7.4 Side-by-Side Comparison](#side-by-side-comparison)
+[7.5 Practical Advantages](#practical-advantages-of-the-new-model)
 
 ## Introduction to I2C
 
@@ -176,7 +179,7 @@ Limitations:
 * Sensitive to electrical noise.
 * Requires careful timing and concurrency management.
 * Needs attention to hold times, setup times, and clock stretching.
-[**<**](#understanding-i2c-in-esp-idf)
+[**.**](#understanding-i2c-in-esp-idf)
 
 ---
 
@@ -213,7 +216,7 @@ Characteristics:
 * Difficult to scale to larger projects.
 * High risk of bugs, race conditions, and deadlocks.
 * Less modular, harder-to-maintain code.
-[**<**](#understanding-i2c-in-esp-idf)
+[**.**](#understanding-i2c-in-esp-idf)
 
 ---
 
@@ -289,7 +292,7 @@ i2c_master_bus_add_device(bus_handle, &device_config, &device_handle)
 * Bus selection.
 * Concurrency control.
 * Timing management.
-[**<**](#understanding-i2c-in-esp-idf)
+[**.**](#understanding-i2c-in-esp-idf)
 
 ---
 ## Side-by-side comparison
@@ -302,7 +305,7 @@ i2c_master_bus_add_device(bus_handle, &device_config, &device_handle)
 | Modularity             | Low                                     | High, context-oriented                        |
 | Multitasking safety    | Not guaranteed                          | Guaranteed by the driver                      |
 | Code structure         | Coupled, error-prone                    | Clean, modular, scalable                      |
-[**<**](#understanding-i2c-in-esp-idf)
+[**.**](#understanding-i2c-in-esp-idf)
 
 ---
 ## Practical advantages of the new model
@@ -311,7 +314,7 @@ i2c_master_bus_add_device(bus_handle, &device_config, &device_handle)
 * Reduce bugs related to global state.
 * Cleaner, easier-to-maintain code.
 * Prepares applications for asynchronous operations and future extensions.
-[**<**](#understanding-i2c-in-esp-idf)
+[**.**](#understanding-i2c-in-esp-idf)
 
 ---
 
