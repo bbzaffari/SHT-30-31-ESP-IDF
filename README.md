@@ -20,20 +20,20 @@ This driver was developed by me, Bruno Bavaresco Zaffari, as part of my undergra
     - [8.4 Practical Advantages](#practical-advantages-of-the-new-model)
 
 # Introduction: What is the SHT30?
-
+[**<**](#toc)                     [**>**](#documentation)
 The **SHT30** is a high-precision digital sensor manufactured by Sensirion, designed to measure **relative humidity (RH)** and **temperature** in various environments. It integrates the sensing elements and signal processing into a compact package, making it ideal for embedded systems. \
 [***^***](#toc)
 
 ---
 # Documentation
-
+[**<**](#introduction-what-is-the-sht30)                     [**>**](#key-features)
 For detailed electrical characteristics, communication protocols, and performance specifications, refer to the official [SHT3x Datasheet](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf).\
 [***^***](#toc)
 
 ---
 
-## Key Features
-
+# Key Features
+[**<**](#documentation)                     [**>**](#sht30-i2c-commands-16-bit-hex)
 * **Measurement ranges:**
 
   * Humidity: 0–100% RH
@@ -66,7 +66,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 
 
 ###  SHT30 I2C Commands (16-bit hex)
-
+[**<**](#sht30-i2c-commands-16-bit-hex)                     [**>**](#quick-guide-when-to-use)
 - `0x2400` → Starts measurement (high repeatability, no clock stretching).  
   → Use when you want precise temperature and humidity readings.
 
@@ -88,7 +88,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 
 
 ### Quick Guide: When to Use Which Command
-
+[**<**](#key-features)                     [**>**](#quick-review-what-is-i2c)
 **To read data:**
 - `0x2400` → start measurement  
 - then read the 6-byte result (via I2C read)
@@ -149,7 +149,7 @@ In toc, clock stretching is an elegant I2C feature that lets slow devices contro
 ---
 
 # Understanding I2C in ESP-IDF
-[**<**](#understanding-i2c-in-esp-idf)
+[**<**](#understanding-i2c-in-esp-idf)                     [**>**](#understanding-i2c-in-esp-idf)
 - [8.1 Old Model v4.x or below](#old-model-v4x-or-below)
 - [8.2 New Model v5.x or above](#new-model-v5x-or-above)
 - [8.3 Side-by-Side Comparison](#side-by-side-comparison)
