@@ -141,7 +141,7 @@ When you want to avoid fixed delays and prefer real-time readiness signals.
 
 ---
 
-In I2C, clock stretching is an elegant I2C feature that lets slow devices control the pacing — but if unused, the master must handle timing carefully.
+In I2C, clock stretching is an elegant feature that lets slow devices control the pacing — but if unused, the master must handle timing carefully.
 
 
 ---
