@@ -3,7 +3,7 @@
 
 This driver was developed by me, Bruno Bavaresco Zaffari, as part of my undergraduate final thesis project in Computer Engineering. It is one of the modules included in the TCC directory of the main repository, serving as a key component for managing low-level hardware communication in the final system. Everyone is free to use, modify, and adapt this code as they wish, with no need for copyrights.
 
-# Summary 
+# T.o.C. 
 
 
 1. [Introduction: What is the SHT30?](#introduction-what-is-the-sht30)
@@ -22,13 +22,13 @@ This driver was developed by me, Bruno Bavaresco Zaffari, as part of my undergra
 # Introduction: What is the SHT30?
 
 The **SHT30** is a high-precision digital sensor manufactured by Sensirion, designed to measure **relative humidity (RH)** and **temperature** in various environments. It integrates the sensing elements and signal processing into a compact package, making it ideal for embedded systems. \
-[***^***](#summary)
+[***^***](#toc)
 
 ---
 # Documentation
 
 For detailed electrical characteristics, communication protocols, and performance specifications, refer to the official [SHT3x Datasheet](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf).\
-[***^***](#summary)
+[***^***](#toc)
 
 ---
 
@@ -60,7 +60,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 
   * Provides ready-to-use digital readings without user calibration
     
-[***^***](#summary)
+[***^***](#toc)
 
 ---
 
@@ -82,7 +82,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 - `0x3066` → Heater OFF.  
   → Deactivates internal heater.
   
-[***^***](#summary)
+[***^***](#toc)
 
 ---
 
@@ -103,7 +103,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 **To reset sensor:**
 - `0x30A2` → soft reset
 ---
-[***^***](#summary)
+[***^***](#toc)
 
 
 ---
@@ -139,11 +139,11 @@ When you want to avoid fixed delays and prefer real-time readiness signals.
 
 ---
 
-In summary, clock stretching is an elegant I2C feature that lets slow devices control the pacing — but if unused, the master must handle timing carefully.
+In toc, clock stretching is an elegant I2C feature that lets slow devices control the pacing — but if unused, the master must handle timing carefully.
 
 
 ---
-[***^***](#summary)
+[***^***](#toc)
 
 ---
 ---
@@ -315,7 +315,7 @@ i2c_master_bus_add_device(bus_handle, &device_config, &device_handle)
 
 ---
 
-[***^***](#summary)
+[***^***](#toc)
 
 ---
 ---
