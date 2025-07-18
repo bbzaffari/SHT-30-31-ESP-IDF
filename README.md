@@ -29,7 +29,7 @@ The **SHT30** is a high-precision digital sensor manufactured by Sensirion, desi
 
 ---
 ## Documentation 
-|[<<_](#introduction-what-is-the-sht30) |   [_>>](#key-features)|
+|[<<](#introduction-what-is-the-sht30) |   [>>](#key-features)|
 |-------------|-------------------------|
 
 For detailed electrical characteristics, communication protocols, and performance specifications, refer to the official [SHT3x Datasheet](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf).\
@@ -38,7 +38,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 ---
 
 ## Key Features
-| [<<_](#documentation)     |   [**^**](#toc)      |        [_>>](#sht30-i2c-commands-16-bit-hex)| 
+| [<<](#documentation)     |   [**^**](#toc)      |        [>>](#sht30-i2c-commands-16-bit-hex)| 
 |-------------|-------------------------|----------------------|
 
 * **Measurement ranges:**
@@ -73,7 +73,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 
 
 ##  SHT30 I2C Commands (16-bit hex)
-| [<<_](#key-features) |   [**^**](#toc)       |         [_>>](#quick-guide-when-to-use-which-command)| 
+| [<<](#key-features) |   [**^**](#toc)       |         [>>](#quick-guide-when-to-use-which-command)| 
 |-------------|-------------------------|----------------------|
 
 - `0x2400` → Starts measurement (high repeatability, no clock stretching).  
@@ -97,7 +97,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 
 
 ## Quick Guide: When to Use Which Command
-| [<<_](#sht30-i2c-commands-16-bit-hex)        |     [**^**](#toc)        |     [_>>](#what-is-clock-stretching)| 
+| [<<](#sht30-i2c-commands-16-bit-hex)        |     [**^**](#toc)        |     [>>](#what-is-clock-stretching)| 
 |-------------|-------------------------|----------------------|
 
 **To read data:**
@@ -120,7 +120,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 ---
 ---
 ## What is Clock Stretching?
-|  [<<_](#sht30-i2c-commands-16-bit-hex)|  [**^**](#toc)|  [_>>](#understanding-i2c-in-esp-idf)| 
+|  [<<](#sht30-i2c-commands-16-bit-hex)|  [**^**](#toc)|  [>>](#understanding-i2c-in-esp-idf)| 
 |-------------|-------------------------|----------------------|
 
 Clock stretching is a mechanism in I2C where the **slave device temporarily holds the SCL line low** to pause communication. This tells the master:
@@ -162,7 +162,7 @@ In I2C, clock stretching is an elegant feature that lets slow devices control th
 ---
 
 # Understanding I2C in ESP-IDF
-| [<<_](#what-is-clock-stretching)    |     [**^**](#toc)        |      [_>>](#toc) | 
+| [<<](#what-is-clock-stretching)    |     [**^**](#toc)        |      [>>](#toc) | 
 |-------------|-------------------------|----------------------|
 
 - [7.1 Understanding I2C Basics](#quick-review-what-is-i2c)
