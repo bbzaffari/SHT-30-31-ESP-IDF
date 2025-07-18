@@ -88,7 +88,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 
 
 ## Quick Guide: When to Use Which Command
-[<<_](#sht30-i2c-commands-16-bit-hex)            [**__^__**](#toc)            [_>>](#what-is-clock-stretching)
+[<<_](#sht30-i2c-commands-16-bit-hex)            [ ^ ](#toc)            [_>>](#what-is-clock-stretching)
                    
 **To read data:**
 - `0x2400` → start measurement  
@@ -110,7 +110,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 ---
 ---
 ## What is Clock Stretching?
- [<<_](#sht30-i2c-commands-16-bit-hex) [***^***](#toc) [_>>](#understanding-i2c-in-esp-idf)
+ [<<_](#sht30-i2c-commands-16-bit-hex) [**^**](#toc) [_>>](#understanding-i2c-in-esp-idf)
                       
 Clock stretching is a mechanism in I2C where the **slave device temporarily holds the SCL line low** to pause communication. This tells the master:
 > “Wait, I need more time to process before you continue.”
@@ -178,7 +178,7 @@ Limitations:
 
 * Sensitive to electrical noise.
 * Requires careful timing and concurrency management.
-* Needs attention to hold times, setup times, and clock stretching.\
+* Needs attention to hold times, setup times, and clock stretching
 [**.**](#understanding-i2c-in-esp-idf)
 
 ---
