@@ -20,7 +20,7 @@ This driver was developed by me, Bruno Bavaresco Zaffari, as part of my undergra
     - [7.5 Practical Advantages](#practical-advantages-of-the-new-model)
 
 # Introduction: What is the SHT30?
-[**<**](#toc)         
+["<  "](#toc)         
 [**>**](#documentation) \
 The **SHT30** is a high-precision digital sensor manufactured by Sensirion, designed to measure **relative humidity (RH)** and **temperature** in various environments. It integrates the sensing elements and signal processing into a compact package, making it ideal for embedded systems. 
 [***^***](#toc)
