@@ -33,7 +33,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 ---
 
 ## Key Features
-[<<_](#documentation)        [***^***](#toc)             [_>>](#sht30-i2c-commands-16-bit-hex)
+[<<_](#documentation)        [**^**](#toc)             [_>>](#sht30-i2c-commands-16-bit-hex)
 * **Measurement ranges:**
 
   * Humidity: 0–100% RH
@@ -66,7 +66,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 
 
 ##  SHT30 I2C Commands (16-bit hex)
-[<<_](#key-features)   [***^***](#toc)               [_>>](#quick-guide-when-to-use)
+[<<_](#key-features)   [**^**](#toc)               [_>>](#quick-guide-when-to-use)
 - `0x2400` → Starts measurement (high repeatability, no clock stretching).  
   → Use when you want precise temperature and humidity readings.
 
