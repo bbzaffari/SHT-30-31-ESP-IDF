@@ -151,7 +151,7 @@ In I2C, clock stretching is an elegant feature that lets slow devices control th
 ---
 
 # Understanding I2C in ESP-IDF
-[<<_](#what-is-clock-stretching)        [***^***](#toc)             [_>>](#toc) \
+[<<_](#what-is-clock-stretching)        [**^**](#toc)             [_>>](#toc) 
 - [7.1 Understanding I2C Basics](#quick-review-what-is-i2c)
 - [7.2 Old Model v4.x or below](#old-model-v4x-or-below)
 - [7.3 New Model v5.x or above](#new-model-v5x-or-above)
