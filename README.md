@@ -7,7 +7,7 @@ This driver was developed by me, Bruno Bavaresco Zaffari, as part of my undergra
 
 
 1. [Introduction: What is the SHT30?](#introduction-what-is-the-sht30)
-2. [Introduction: What is the SHT30?](#introduction-what-is-the-sht30)
+2. [Documentation](#documentation)
 3. [Key Features](#key-features)
 4. [SHT30 I2C Commands (16 bit hex)](#sht30-i2c-commands-16-bit-hex)
 5. [Quick Guide: When to Use](#quick-guide-when-to-use)
