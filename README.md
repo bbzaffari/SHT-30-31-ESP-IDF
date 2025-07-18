@@ -88,7 +88,7 @@ For detailed electrical characteristics, communication protocols, and performanc
 
 
 ## Quick Guide: When to Use Which Command
-[<<_](#sht30-i2c-commands-16-bit-hex)            [                 ^           ](#toc)            [_>>](#what-is-clock-stretching)
+[<<_](#sht30-i2c-commands-16-bit-hex)            [**^**](#toc)            [_>>](#what-is-clock-stretching)
                    
 **To read data:**
 - `0x2400` → start measurement  
